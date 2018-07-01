@@ -14,7 +14,8 @@
 		FD99DA8F20DFF4510024F634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD99DA8D20DFF4510024F634 /* Main.storyboard */; };
 		FD99DA9120DFF4520024F634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD99DA9020DFF4520024F634 /* Assets.xcassets */; };
 		FD99DA9420DFF4520024F634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD99DA9220DFF4520024F634 /* LaunchScreen.storyboard */; };
-		FD99DAC420E2E5820024F634 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD99DAC220E2E5820024F634 /* DataModel.xcdatamodeld */; };
+		FDB8C91820E8073C00E8D90B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8C91720E8073C00E8D90B /* Item.swift */; };
+		FDB8C91A20E8074700E8D90B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8C91920E8074700E8D90B /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		FD99DA9020DFF4520024F634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD99DA9320DFF4520024F634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD99DA9520DFF4520024F634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD99DAC320E2E5820024F634 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		FDB8C91720E8073C00E8D90B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FDB8C91920E8074700E8D90B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 		FD99DA9D20E255280024F634 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				FD99DAC220E2E5820024F634 /* DataModel.xcdatamodeld */,
+				FDB8C91920E8074700E8D90B /* Category.swift */,
+				FDB8C91720E8073C00E8D90B /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB8C91820E8073C00E8D90B /* Item.swift in Sources */,
 				FD50DADE20E636E900816EAC /* CategoryViewController.swift in Sources */,
 				FD99DA8C20DFF4510024F634 /* TodoListViewController.swift in Sources */,
-				FD99DAC420E2E5820024F634 /* DataModel.xcdatamodeld in Sources */,
 				FD99DA8A20DFF4510024F634 /* AppDelegate.swift in Sources */,
+				FDB8C91A20E8074700E8D90B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FD99DAC220E2E5820024F634 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FD99DAC320E2E5820024F634 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = FD99DAC320E2E5820024F634 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FD99DA7E20DFF4510024F634 /* Project object */;
 }
